@@ -61,22 +61,37 @@ $(window).scroll(function(){
 
 
 
-$(function () {
+jQuery(function () {
 	"use strict";
     
-    /*global $ $*/ 
+    /*global jQuery $*/ 
 	//Slider 
 	$(document).ready(function(){
 		
-		$('.skillbar').each(function() {
-			$(this).appear(function() {
-				$(this).find('.count-bar').animate({
-					width:$(this).attr('data-percent')
+		jQuery('.skillbar').each(function() {
+			jQuery(this).appear(function() {
+				jQuery(this).find('.count-bar').animate({
+					width:jQuery(this).attr('data-percent')
 				},3000);
-				var percent = $(this).attr('data-percent');
-				$(this).find('.count').html('<span>' + percent + '</span>');
+				var percent = jQuery(this).attr('data-percent');
+				jQuery(this).find('.count').html('<span>' + percent + '</span>');
 			});
 		});	
 	});
+
+  var delay = 1,
+  duration = $("#scroll .item").length * delay;
+
+  $("#scroll .item").each(function(n) {
+    $(this).css("transform", "translateY(-"+(n*100)+"%)");
+    $(this).css("animation", "scrollanim "+duration+"s linear -"+(delay*n)+"s infinite");
+  });
 	
 }());
+
+
+
+
+
+
+

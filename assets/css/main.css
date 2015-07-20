@@ -1,11 +1,43 @@
 @import url("font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
 
-/*
-	Prologue by HTML5 UP
-	html5up.net | @n33co
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* Skills Good at*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,100,400);
+
+
+#scroll {
+  font-size: 48px;
+  font-family: 'Roboto Light', sans-serif;
+  color: #256F81;
+}
+
+
+#scroll {
+  float: left;
+  /* transform: translate(-100%, 0); */
+  /* margin-right: -100%; */
+  /* height: 0; */
+  text-align: inherit;
+}
+
+#scroll .item {
+  display: block;
+  text-shadow: 0 0 8px white, 0 -4px 12px white, 0 4px 12px white, 0 -8px 16px white, 0 8px 16px white;
+  text-align: left;
+  position: relative;
+  margin: 0;
+}
+
+@keyframes scrollanim {
+  0% {opacity: 0; top: -128px;}
+  25% {color: rgba(255, 255, 255, 0);}
+  40% {color: rgba(34, 34, 34, 1); opacity: 1;}
+  60% {color: rgba(34, 34, 34, 1); opacity: 1;}
+  75% {color: rgba(255, 255, 255, 0);}
+  100% {opacity: 0; top: 128px;}
+}
+
 
 /* Reset */
 
@@ -2660,14 +2692,14 @@
 		}
 
 		.image.avatar48 {
-			width: 48px;
-			height: 48px;
+			width: 75px;
+			height: 80px;
 			background: #f00;
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 75px;
+				height: 75px;
 			}
 
 		.image.fit {
@@ -2973,8 +3005,8 @@
 
 	#logo {
 		position: relative;
-		margin: 1.75em 1.5em 1.5em 1.5em;
-		min-height: 48px;
+		margin: 1.75em 0.5em 1.5em 1.5em;
+		min-height: 75px;
 		cursor: default;
 	}
 
