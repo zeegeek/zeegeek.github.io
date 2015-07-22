@@ -1,29 +1,33 @@
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
-
+/* @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+ */
 /* Skills Good at*/
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,100,400);
-
+/* @import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,100,400);
+ */
 
 #scroll {
-  font-size: 48px;
+  font-size: 30px;
   font-family: 'Roboto Light', sans-serif;
   color: #256F81;
 }
 
+section#skill h2.ext {
+  float: left;
+  transform: translate(50%, 150%);
+}
 
 #scroll {
   float: left;
-  /* transform: translate(-100%, 0); */
-  /* margin-right: -100%; */
+  transform: translate(70%, 50%);
+    /* margin-right: -100%; */
   /* height: 0; */
   text-align: inherit;
 }
 
 #scroll .item {
   display: block;
-  text-shadow: 0 0 8px white, 0 -4px 12px white, 0 4px 12px white, 0 -8px 16px white, 0 8px 16px white;
+  text-shadow: 0 0 8px #256F81, 0 -4px 12px #256F81, 0 4px 12px #256F81, 0 -8px 16px #256F81, 0 8px 16px #256F81;
   text-align: left;
   position: relative;
   margin: 0;
