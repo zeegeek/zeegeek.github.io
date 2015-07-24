@@ -6,6 +6,26 @@
 /* @import url(http://fonts.googleapis.com/css?family=Roboto:500,300,700,100,400);
  */
 
+
+img[data-role="logo"] {  
+ text-align:left;
+ position: absolute;
+ left: 8%;
+ top: 15%;
+ }
+
+section {
+	 position: relative;
+}
+#imagelightbox
+{
+    position: fixed;
+    z-index: 9999;
+ 
+    -ms-touch-action: none;
+    touch-action: none;
+}
+
 #scroll {
   font-size: 30px;
   font-family: 'Roboto Light', sans-serif;
@@ -612,6 +632,10 @@ section#skill h2.ext {
 	}
 
 	@media screen and (max-width: 736px) {
+
+		section#skill h2.ext, #scroll {
+			display:none
+				}
 
 		.container.\31 25\25 {
 			width: 100%;
